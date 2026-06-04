@@ -1,5 +1,5 @@
 {
-  "name": "wfm",
+  "name": "workflowmax-sdk",
   "version": "0.1.0",
   "description": "TypeScript client for the WorkflowMax API",
   "main": "dist/index.js",

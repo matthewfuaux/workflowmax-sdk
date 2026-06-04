@@ -20,7 +20,7 @@ npm install wfm
 ## Quick start
 
 ```ts
-import { WorkflowMax } from "wfm";
+import { WorkflowMax } from "workflowmax-sdk";
 
 const wfm = new WorkflowMax({
   accessToken: "your-access-token",
@@ -62,7 +62,7 @@ import {
   obtainTokens,
   refreshTokens,
   decodeOrgId,
-} from "wfm";
+} from "workflowmax-sdk";
 
 // 1. Redirect the user to WorkflowMax to authorise
 const url = buildAuthoriseUrl({
@@ -190,7 +190,7 @@ npm install zod-to-json-schema @modelcontextprotocol/sdk
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { WorkflowMax, registry, getTool } from "wfm";
+import { WorkflowMax, registry, getTool } from "workflowmax-sdk";
 
 const wfm = new WorkflowMax({
   accessToken: process.env.WFM_ACCESS_TOKEN!,
@@ -227,7 +227,7 @@ That's it — all ~90 WorkflowMax endpoints are automatically exposed as MCP too
 ### Using a subset of tools
 
 ```ts
-import { registry } from "wfm";
+import { registry } from "workflowmax-sdk";
 
 // Only expose read-only tools
 const readOnlyTools = registry.filter(
@@ -238,7 +238,7 @@ const readOnlyTools = registry.filter(
 ### Using schemas directly
 
 ```ts
-import { schemas } from "wfm";
+import { schemas } from "workflowmax-sdk";
 
 // Validate args before calling
 const args = schemas.CreateClientSchema.parse(rawInput);
@@ -312,7 +312,7 @@ await wfm.clientDocuments.upload(clientUuid, file, {
 ### Refresh tokens automatically
 
 ```ts
-import { refreshTokens, WorkflowMax } from "wfm";
+import { refreshTokens, WorkflowMax } from "workflowmax-sdk";
 
 async function getClient(stored: {
   accessToken: string;

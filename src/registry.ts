@@ -8,7 +8,7 @@
  * Usage in an MCP server:
  *
  *   import { zodToJsonSchema } from "zod-to-json-schema";
- *   import { registry } from "wfm";
+ *   import { registry } from "workflowmax-sdk";
  *
  *   const tools = registry.map(t => ({
  *     name: t.name,
