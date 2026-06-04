@@ -12,7 +12,7 @@ TypeScript SDK for the [WorkflowMax V2 API](https://api-docs.workflowmax.com).
 ## Installation
 
 ```bash
-npm install wfm
+npm install workflowmax-sdk
 ```
 
 ---
